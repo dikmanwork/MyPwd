@@ -21,6 +21,9 @@
 		9675A2A3180A3EAD00C19A80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9675A285180A3EAD00C19A80 /* UIKit.framework */; };
 		9675A2AB180A3EAD00C19A80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9675A2A9180A3EAD00C19A80 /* InfoPlist.strings */; };
 		9675A2AD180A3EAE00C19A80 /* MyPwdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675A2AC180A3EAD00C19A80 /* MyPwdTests.m */; };
+		9675A2B8180A68DB00C19A80 /* groupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675A2B7180A68DB00C19A80 /* groupViewController.m */; };
+		9675A2BB180AB0C800C19A80 /* itemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675A2BA180AB0C800C19A80 /* itemViewController.m */; };
+		96D01C31180AD45800CC8FF1 /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D01C30180AD45800CC8FF1 /* detailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		9675A2A8180A3EAD00C19A80 /* MyPwdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyPwdTests-Info.plist"; sourceTree = "<group>"; };
 		9675A2AA180A3EAD00C19A80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9675A2AC180A3EAD00C19A80 /* MyPwdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPwdTests.m; sourceTree = "<group>"; };
+		9675A2B6180A68DB00C19A80 /* groupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupViewController.h; sourceTree = "<group>"; };
+		9675A2B7180A68DB00C19A80 /* groupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupViewController.m; sourceTree = "<group>"; };
+		9675A2B9180AB0C800C19A80 /* itemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itemViewController.h; sourceTree = "<group>"; };
+		9675A2BA180AB0C800C19A80 /* itemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = itemViewController.m; sourceTree = "<group>"; };
+		96D01C2F180AD45800CC8FF1 /* detailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = "<group>"; };
+		96D01C30180AD45800CC8FF1 /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +124,16 @@
 				9675A290180A3EAD00C19A80 /* work_dikmanAppDelegate.h */,
 				9675A291180A3EAD00C19A80 /* work_dikmanAppDelegate.m */,
 				9675A293180A3EAD00C19A80 /* Main.storyboard */,
+				96D01C2F180AD45800CC8FF1 /* detailViewController.h */,
+				96D01C30180AD45800CC8FF1 /* detailViewController.m */,
+				9675A2B9180AB0C800C19A80 /* itemViewController.h */,
+				9675A2BA180AB0C800C19A80 /* itemViewController.m */,
 				9675A296180A3EAD00C19A80 /* work_dikmanViewController.h */,
 				9675A297180A3EAD00C19A80 /* work_dikmanViewController.m */,
 				9675A299180A3EAD00C19A80 /* Images.xcassets */,
 				9675A288180A3EAD00C19A80 /* Supporting Files */,
+				9675A2B6180A68DB00C19A80 /* groupViewController.h */,
+				9675A2B7180A68DB00C19A80 /* groupViewController.m */,
 			);
 			path = MyPwd;
 			sourceTree = "<group>";
@@ -250,9 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9675A2B8180A68DB00C19A80 /* groupViewController.m in Sources */,
 				9675A28E180A3EAD00C19A80 /* main.m in Sources */,
+				9675A2BB180AB0C800C19A80 /* itemViewController.m in Sources */,
 				9675A292180A3EAD00C19A80 /* work_dikmanAppDelegate.m in Sources */,
 				9675A298180A3EAD00C19A80 /* work_dikmanViewController.m in Sources */,
+				96D01C31180AD45800CC8FF1 /* detailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyPwd/MyPwd-Prefix.pch";
 				INFOPLIST_FILE = "MyPwd/MyPwd-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +414,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyPwd/MyPwd-Prefix.pch";
 				INFOPLIST_FILE = "MyPwd/MyPwd-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -461,6 +481,7 @@
 				9675A2B2180A3EAE00C19A80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9675A2B3180A3EAE00C19A80 /* Build configuration list for PBXNativeTarget "MyPwdTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +490,7 @@
 				9675A2B5180A3EAE00C19A80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
